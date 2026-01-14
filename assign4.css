@@ -1,0 +1,114 @@
+/*----[Global Variables]----*/
+:root {
+    --card-width: 150px;
+    --card-height: 220px;
+    --spacing: 10px;
+    --score-font-size: 1.5em;
+    --status-font-size: 1.6em;
+    --main-bg: #d46161;
+    --dealer-bg: #c7d461;
+    --player-bg: #7a61d4;
+}
+
+/*----[Base Styles]----*/
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f5f5;
+}
+
+/*----[Header]----*/
+header {
+    background-color: white;
+    padding: 10px 0;
+    border-bottom: 2px solid black;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+/*----[Main Container]----*/
+#checkarea {
+    background-color: var(--main-bg);
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+/*----[Dealer and Player Areas]----*/
+h3 {
+    font-weight: bold;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+#dealer_hand, #player_hand {
+    min-height: var(--card-height);
+    background-color: var(--dealer-bg);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#player_hand {
+    background-color: var(--player-bg);
+}
+
+/*----[Card Spacing]----*/
+#dealer_hand svg, #player_hand svg {
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+/*----[Score Display & Labels]----*/
+.valueBox {
+    margin: 10px;
+    padding: 10px 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    font-size: var(--score-font-size);
+    background-color: white;
+    min-width: 120px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.score-label {
+    margin-bottom: 4px;
+    text-align: center;
+}
+
+
+
+#status {
+    font-size: var(--status-font-size);
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color: #ffefc0;
+    border: 3px solid black;
+    border-radius: 12px;
+    min-width: 140px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/*----[Buttons]----*/
+#hitBtn, #standBtn, #restartBtn {
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+
+#deck_cards {
+    min-height: 13em;
+}
+
+/*----[Footer]----*/
+footer {
+    margin-top: 20px;
+    font-size: 1em;
+    text-align: center;
+    color: black;
+}
